@@ -1,0 +1,29 @@
+package baiTapOop;
+
+import java.util.Scanner;
+
+public class mainQLS {
+	Scanner scan = new Scanner(System.in);
+	QuanLySach qls = new QuanLySach();
+	int choice;
+	do {
+		qls.menu();
+		choice = Integer.parseInt(scan.nextLine());
+		switch (choice) {
+		case 1:
+			int choice1 = Integer.parseInt(scan.nextLine());
+			qls.addCanBo(choice1);
+			break;
+		case 2:
+			qlcb.searchCanBo();
+			break;
+		case 3:
+			qlcb.printCanBoList();
+			break;
+		}
+	} while (choice != 4);
+}
+	
+	
+
+}

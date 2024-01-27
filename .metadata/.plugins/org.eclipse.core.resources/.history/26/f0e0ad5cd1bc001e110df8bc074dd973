@@ -1,0 +1,7 @@
+package baiTapOop;
+
+public class mainQLS {
+	Scanner scan = new Scanner(System.in);
+	
+
+}

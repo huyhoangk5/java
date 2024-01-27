@@ -1,49 +1,35 @@
 package baiTapOop;
 
 public class news extends document{
-	private int ordinalNumber;// số phát hành, số thứ tự
-	private int month;//tháng phát hành
-	
+	private int day;//ngày phát hành
+
 	public news() {
 		super();
 	}
 
-	public news(int ordinalNumber, int month) {
+	public news(int day) {
 		super();
-		this.ordinalNumber = ordinalNumber;
-		this.month = month;
+		this.day = day;
 	}
-	
-	public news(long id, String imprint, long issue, int ordinalNumber, int month) {
+
+	public news(long id, String imprint, long issue, int day) {
 		super(id, imprint, issue);
-		this.ordinalNumber = ordinalNumber;
-		this.month = month;
+		this.day = day;
 		// TODO Auto-generated constructor stub
 	}
-	
 
-	public int getOrdinalNumber() {
-		return ordinalNumber;
+	public int getDay() {
+		return day;
 	}
 
-	public void setOrdinalNumber(int ordinalNumber) {
-		this.ordinalNumber = ordinalNumber;
-	}
-
-	public int getMonth() {
-		return month;
-	}
-
-	public void setMonth(int month) {
-		this.month = month;
+	public void setDay(int day) {
+		this.day = day;
 	}
 
 	@Override
 	public String toString() {
-		return "news [id=" + id + ", imprint=" + imprint + ", issue=" + issue + ", ordinalNumber=" + ordinalNumber
-				+ ", month=" + month + "]";
+		return "news [id=" + id + ", imprint=" + imprint + ", issue=" + issue + ", day=" + day + "]";
 	}
-	
 	
 	
 

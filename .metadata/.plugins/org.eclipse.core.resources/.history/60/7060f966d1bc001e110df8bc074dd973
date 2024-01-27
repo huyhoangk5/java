@@ -1,0 +1,9 @@
+package baiTapOop;
+
+import java.util.Scanner;
+
+public class mainQLS {
+	Scanner scan = new Scanner(System.in);
+	QuanL
+
+}
