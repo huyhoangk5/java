@@ -1,0 +1,24 @@
+package baitap;
+
+public class CongNhan extends CanBo {
+	private int rank;
+
+	public CongNhan(int rank) {
+		super();
+		this.rank = rank;
+	}
+
+	public CongNhan() {
+		super();
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+	
+
+}

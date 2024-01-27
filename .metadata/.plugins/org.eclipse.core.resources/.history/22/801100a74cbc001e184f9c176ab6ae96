@@ -1,0 +1,20 @@
+package baiTapOop;
+
+public class news extends document{
+	private int ordinalNumber;// số phát hành, số thứ tự
+	private int month;//tháng phát hành
+	
+	public news() {
+		super();
+	}
+
+	public news(int ordinalNumber, int month) {
+		super();
+		this.ordinalNumber = ordinalNumber;
+		this.month = month;
+	}
+	
+	
+	
+
+}

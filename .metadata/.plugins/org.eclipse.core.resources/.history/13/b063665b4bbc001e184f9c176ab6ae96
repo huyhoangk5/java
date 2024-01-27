@@ -1,0 +1,6 @@
+package baiTapOop;
+
+public class book extends document{
+	private String author;/
+
+}

@@ -1,0 +1,21 @@
+package baiTapOop;
+
+public class document {
+	protected long id;// mã sản phẩm
+	protected String imprint;// tên nhà xuất bản
+	protected long issue;// số bản phát hành
+	
+	public document() {
+		super();
+	}
+
+	public document(long id, String imprint, long issue) {
+		super();
+		this.id = id;
+		this.imprint = imprint;
+		this.issue = issue;
+	}
+	
+	
+
+}

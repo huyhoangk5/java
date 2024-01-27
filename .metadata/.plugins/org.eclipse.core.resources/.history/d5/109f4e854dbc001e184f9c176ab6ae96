@@ -1,0 +1,22 @@
+package baiTapOop;
+
+public class magazine extends document{
+	private int day;//ngày phát hành
+
+	public magazine() {
+		super();
+	}
+
+	public magazine(int day) {
+		super();
+		this.day = day;
+	}
+
+	public magazine(long id, String imprint, long issue, ) {
+		super(id, imprint, issue);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

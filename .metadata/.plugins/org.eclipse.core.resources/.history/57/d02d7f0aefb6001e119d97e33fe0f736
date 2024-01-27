@@ -1,0 +1,12 @@
+package test;
+
+public class ProductRun {
+	public static void main(String[] args) {
+		ProductManager pm = new ProductManager();
+		for(int i = 0; i <= length; i++) {
+			pm.addProduct();
+		}
+		pm.display();
+	}
+
+}

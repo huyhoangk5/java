@@ -1,0 +1,6 @@
+package baitap;
+
+public class KySu extends CanBo {
+	private String nganhdaotao;
+	
+}

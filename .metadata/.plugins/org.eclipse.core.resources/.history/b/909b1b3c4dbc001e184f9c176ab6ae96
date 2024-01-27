@@ -1,0 +1,6 @@
+package baiTapOop;
+
+public class magazine extends document{
+	private int day
+
+}

@@ -1,0 +1,18 @@
+package baiTapOop;
+
+public class book extends document{
+	private String author;//teen tác giả
+	private long page;
+	
+	public book() {
+		super();
+	}
+
+	public book(String author, long page) {
+		super();
+		this.author = author;
+		this.page = page;
+	}
+	
+	
+}

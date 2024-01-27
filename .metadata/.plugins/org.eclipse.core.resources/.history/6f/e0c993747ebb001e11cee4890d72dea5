@@ -1,0 +1,21 @@
+package baitap;
+
+public class CanBo {
+	protected String name;
+	protected int age;
+	protected String gender;
+	protected String address;
+	
+	public CanBo() {
+		super();
+	}
+
+	public CanBo(String name, int age, String gender, String address) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.address = address;
+	}
+	
+}

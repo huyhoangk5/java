@@ -1,0 +1,6 @@
+package baiTapOop;
+
+public class news extends document{
+	private int ordinal
+
+}

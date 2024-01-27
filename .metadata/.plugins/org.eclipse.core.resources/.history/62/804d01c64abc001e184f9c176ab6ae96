@@ -1,0 +1,8 @@
+package baiTapOop;
+
+public class document {
+	protected long id;
+	protected String imprint;
+	protected
+
+}

@@ -1,0 +1,86 @@
+package baiTapOop;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class QLCB {
+	private static List<CanBo> canBoList = new ArrayList<>();
+    private static Scanner scan = new Scanner(System.in);
+    int choice;
+    
+    private static void menu() {
+        System.out.println("Quản lý cán bộ");
+        System.out.println("1. THêm mới cán bộ");
+        System.out.println("2. Tìm kiếm cán bộ theo tên");
+        System.out.println("3. Hiển thị danh sách cán bộ");
+        System.out.println("4. Thoát");
+        System.out.println("Nhập vào lựa chọn của bạn: ");
+    }
+    public static void main(String[] args) {
+        int choose;
+        do {
+            menu();
+            choose = Integer.parseInt(scan.nextLine());
+            switch (choose) {
+                case 1:
+                    addCanBo(int choice);
+                    break;
+                case 2:
+                    searchCanBo();
+                    break;
+                case 3:
+                    printCanBoList();
+                    break;
+                case 4:
+                    System.out.println("Thoát");
+                    break;
+                default:
+                    System.out.println("Vui lòng nhập lại lựa chọn");
+            }
+        } while (choose != 4);
+    }
+    
+    private static void addCanBo(int choice) {
+    	CanBo cb;
+        System.out.println("Nhập thông tin cán bộ");
+        System.out.print("Họ tên: ");
+        String name = scan.nextLine();
+        System.out.print("Tuổi: ");
+        int age = Integer.parseInt(scan.nextLine());
+        System.out.print("Giới tính: ");
+        String gender = scan.nextLine();
+        System.out.print("Địa chỉ: ");
+        String address = scan.nextLine();
+        if (choice == 1) {
+			System.out.println("Nhập ngành đào tạo: ");
+			String special = scanner.nextLine();
+			cb = new KySu(name, age, gender, address, special);
+		} else if (choice == 2) {
+			System.out.println("Nhập bậc: ");
+			String level = scanner.nextLine();
+			cb = new CongNhan(name, age, gender, address, level);
+		} else {
+			System.out.println("Nhập công việc: ");
+			String work = scanner.nextLine();
+			cb = new NhanVien(name, age, gender, address, work);
+		}
+		return cb;
+    }
+    
+    private static void searchCanBo() {
+        System.out.print("Nhập vào tên cán bộ cần tìm: ");
+        String name = scan.nextLine();
+        for (CanBo canBo : canBoList) {
+            if (canBo.getName().equals(name)) {
+                System.out.println(canBo);
+                break;
+            }
+        }
+    }
+    private static void printCanBoList() {
+        for (CanBo canBo : canBoList) {
+            System.out.println(canBo);
+        }
+    }
+}

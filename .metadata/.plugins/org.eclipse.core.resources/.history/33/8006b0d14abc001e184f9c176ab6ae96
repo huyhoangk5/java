@@ -1,0 +1,8 @@
+package baiTapOop;
+
+public class document {
+	protected long id;// mã sản p
+	protected String imprint;
+	protected long issue;
+
+}

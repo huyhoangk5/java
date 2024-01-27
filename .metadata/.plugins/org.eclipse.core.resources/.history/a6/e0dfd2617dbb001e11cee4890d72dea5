@@ -1,0 +1,6 @@
+package baitap;
+
+public class NhanVien extends CanBo {
+	
+
+}
