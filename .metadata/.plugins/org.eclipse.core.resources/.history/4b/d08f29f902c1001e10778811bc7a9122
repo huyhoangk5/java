@@ -1,0 +1,25 @@
+package baiTapOop;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		ProductManager pm = new ProductManager();
+		int choice;
+		do {
+			System.out.println("Mời nhập vào lựa chọn:");
+			System.out.println("1. Tạo mới 1 Product.");
+			System.out.println("2. Sửa 1 Product theo id.");
+			System.out.println("3. Xóa 1 Product theo id.");
+			System.out.println("4. Hiển thị 1 product theo id.");
+			System.out.println("5. Hiển thị tất cả Product.");
+			System.out.println("6. Hiển thị tất cả Product theo 1 Category.");
+			System.out.println("7. Tính tổng tiền tất cả các Product hiện có.");
+			System.out.println("8. ");
+			System.out.println("");
+			System.out.println("");
+		}
+	}
+
+}

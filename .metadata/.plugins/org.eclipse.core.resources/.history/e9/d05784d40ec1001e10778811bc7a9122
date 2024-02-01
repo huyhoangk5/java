@@ -1,0 +1,74 @@
+package baiTapOop;
+
+import java.util.Scanner;
+
+public class ProductManager {
+	private Scanner scan;
+	private Product[] list;
+	private int index = 0;
+	
+	public ProductManager(Scanner scan) {
+		super();
+		list = new Product[0];
+		this.scan = scan;
+		
+	}
+	
+	public Product newProduct(int choice) {
+		Product pro;
+		System.out.println("Nhập vào id sản phẩm: ");
+		long id = scan.nextLong();
+		System.out.println("Nhập vào tên sản phẩm: ");
+		String name = scan.nextLine();
+		System.out.println("Nhập vào giá sản phẩm: ");
+		double price = scan.nextDouble();
+		System.out.println("Nhập vào số lượng sản phẩm: ");
+		int quantity = scan.nextInt();
+		//chọn category
+		Category category = choiceCategory();
+		pro = new Product(id, name, price, quantity, category);
+		return pro;
+		}
+	
+	private enum Category{
+		Điện_tử,
+		Đồ_ăn,
+		Nước_uống
+	}
+	
+	private Category choiceCategory() {
+		System.out.println("Chọn Category");
+		System.out.println("1. Điện tử");
+		System.out.println("2. Đồ ăn");
+		System.out.println("3. Nước uống");
+		System.out.println("Nhập vào lựa chọn: ");
+		int choiceCategory = inputNumber(scan);
+		if (choiceCategory == 1) {
+			return Category.Điện_tử;
+		}else if (choiceCategory == 2) {
+			return Category.Đồ_ăn;
+		}else {
+			return Category.Nước_uống;
+		}
+	}
+	
+	public static int inputNumber(Scanner scan) {
+		int number = -1;
+		do {
+			try {
+				number = Integer.parseInt(scan.nextLine());
+			}catch (RuntimeException e) {
+				System.out.println("Sai định dạng, mời nhập lại: ");
+			}
+		}while (number == -1);
+		return number;
+	}
+	
+	public void repairProductById() {
+		
+	}
+	
+	
+}
+	
+	

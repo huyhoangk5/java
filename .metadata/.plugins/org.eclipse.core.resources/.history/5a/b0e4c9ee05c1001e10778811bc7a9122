@@ -1,0 +1,16 @@
+package baiTapOop;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class ProductManager {
+	private Scanner scan;
+	private List[] list;
+	private int index = 0;
+	
+	public ProductManager(Scanner scan) {
+		super();
+		list = new 
+	}
+
+}

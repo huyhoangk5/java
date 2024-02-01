@@ -1,0 +1,29 @@
+package baiTapOop;
+
+import java.util.Scanner;
+
+public class ProductManager {
+	private Scanner scan;
+	private Product[] list;
+	private int index = 0;
+	
+	public ProductManager(Scanner scan) {
+		super();
+		list = new Product[0];
+		this.scan = scan;
+		
+	}
+	
+	public Product newProduct(int choice) {
+		Product pro;
+		System.out.println("Nhập vào id: ");
+		long id = scan.nextLong();
+		System.out.println("Nhập vào tên sản phẩm: ");
+		long id = scan.nextLong();
+		System.out.println("Nhập vào id: ");
+		long id = scan.nextLong();
+		System.out.println("Nhập vào id: ");
+		long id = scan.nextLong();
+	}
+
+}

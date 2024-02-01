@@ -1,0 +1,16 @@
+package baiTapOop;
+
+public class Category {
+	String name;
+	
+	public Category() {
+		super();
+	}
+
+	public Category(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+}
