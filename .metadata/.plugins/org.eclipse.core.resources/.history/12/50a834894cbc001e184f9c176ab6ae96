@@ -1,8 +1,0 @@
-package baiTapOop;
-
-public class news extends document{
-	private int ordinalNumber;// số phát hành, số thứ tự
-	private 
-	
-
-}

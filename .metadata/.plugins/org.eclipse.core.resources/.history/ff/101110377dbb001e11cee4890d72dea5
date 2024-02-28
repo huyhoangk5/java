@@ -1,8 +1,0 @@
-package baitap;
-
-public class CanBo {
-	protected String name;
-	protected int age;
-	protected String gender;
-	protected 
-}

@@ -1,9 +1,0 @@
-package baiTapOop;
-
-import java.util.Scanner;
-
-public class ProductManager {
-	Scanner scan;
-	
-
-}

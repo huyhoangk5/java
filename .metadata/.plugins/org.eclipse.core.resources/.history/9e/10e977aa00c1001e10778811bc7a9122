@@ -1,7 +1,0 @@
-package baiTapOop;
-
-public class Category {
-	String name;
-	
-
-}

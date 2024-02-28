@@ -1,7 +1,0 @@
-package baiTapOop;
-
-public class ProductManager {
-	Scanner scan;
-	
-
-}

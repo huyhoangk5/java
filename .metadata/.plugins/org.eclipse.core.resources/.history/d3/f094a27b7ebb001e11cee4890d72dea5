@@ -1,6 +1,0 @@
-package baitap;
-
-public class CongNhan extends CanBo {
-	private int rank;
-
-}
