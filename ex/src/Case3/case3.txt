@@ -1,0 +1,2 @@
+[Footballer [id=1234, name=abc, age=18, sex=Nam, address=Hà Nội, goal=5, match=10, money=Đã đóng]]
+[Footballer [id = 5698, name = jkl, age = 25, sex = Nam, address = Hà Nội, goal = 20, match = 30, money = Đã đóng]]
